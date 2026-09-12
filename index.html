@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netz Spiele</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: white;
+      text-align: center;
+      padding: 45px 20px 35px;
+      border-radius: 0 0 30px 30px;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 17px;
+      opacity: 0.95;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 25px 16px 50px;
+    }
+
+    .welcome {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .welcome h2 {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .welcome p {
+      color: #6b7280;
+    }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .game {
+      background: white;
+      padding: 24px 18px;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #1f2937;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+      transition: 0.2s;
+      text-align: center;
+    }
+
+    .game:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+    }
+
+    .icon {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .game h3 {
+      font-size: 19px;
+      margin-bottom: 6px;
+    }
+
+    .game p {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 35px 15px 30px;
+      }
+
+      header h1 {
+        font-size: 32px;
+      }
+
+      .games {
+        grid-template-columns: 1fr;
+      }
+
+      .game {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🎮 Netz Spiele</h1>
+    <p>Deutsch lernen mit Spaß!</p>
+  </header>
+
+  <main class="container">
+
+    <section class="welcome">
+      <h2>Willkommen! 🇩🇪</h2>
+      <p>Wähle ein Spiel und übe dein Deutsch.</p>
+    </section>
+
+    <section class="games">
+
+      <a class="game" href="#">
+        <div class="icon">👤</div>
+        <h3>Körperteile</h3>
+        <p>Übe die Körperteile auf Deutsch.</p>
+      </a>
+
+      <a class="game" href="#">
+        <div class="icon">🔤</div>
+        <h3>Alphabet</h3>
+        <p>Spiele mit dem deutschen Alphabet.</p>
+      </a>
+
+      <a class="game" href="#">
+        <div class="icon">📝</div>
+        <h3>Artikel</h3>
+        <p>Der, die oder das?</p>
+      </a>
+
+      <a class="game" href="#">
+        <div class="icon">🧠</div>
+        <h3>Wortschatz</h3>
+        <p>Erweitere deinen deutschen Wortschatz.</p>
+      </a>
+
+      <a class="game" href="#">
+        <div class="icon">📚</div>
+        <h3>Grammatik</h3>
+        <p>Übe wichtige Grammatikthemen.</p>
+      </a>
+
+      <a class="game" href="#">
+        <div class="icon">🎯</div>
+        <h3>A1 Spiele</h3>
+        <p>Spiele für Deutsch A1.</p>
+      </a>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Netz Spiele · Deutsch lernen macht Spaß!
+  </footer>
+
+</body>
+</html>
